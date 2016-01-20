@@ -13,7 +13,7 @@ end
 
 # French as a second language.
 class Array
-  translations = {:at => :a, :clear => :clear, :collect => :collecter, :collect! => :collecter!, :combination => :combinaison, :compact => :compact, :compact! => :compact!, :count => :compte, :delete => :supprimer, :delete_at => :supprimer_at, :delete_if => :supprimer_si, :drop => :baisse, :drop_while => :drop_while, :each => :chaque, :each_index => :chaque_index, :empty? => :vide?, :eql? => :eql?, :fetch => :chercher, :fill => :remplissage, :find_index => :trouver_index, :first => :premier, :flatten => :aplatir, :flatten! => :aplatir!, :frozen? => :gelé?, :hash => :hachage, :index => :index, :insert => :insert, :inspect => :inspecter, :join => :joindre, :keep_if => :garde_si, :last => :dernier, :length => :longueur, :map => :carte, :map! => :carte!, :pack => :paquet, :product => :produit, :push => :poussoir, :rassoc => :rassoc, :reject => :rejeter, :reject! => :rejeter!, :replace => :remplacer, :reverse => :inverse, :reverse! => :inverse!, :reverse_each => :inverse_chaque, :rotate => :tourner, :rotate! => :tourner!, :sample => :echantillon, :select => :choisir, :select! => :choisir!, :shift => :changement, :shuffle => :mélanger, :shuffle! => :mélanger!, :size => :taille, :slice => :tranche, :slice! => :tranche!, :take => :prendre, :take_while => :prendre_tout, :transpose => :transposer, :uniq => :uniques, :uniq! => :uniques!} 
+  translations = {:at => :a, :clear => :clear, :collect => :collecter, :collect! => :collecter!, :combination => :combinaison, :compact => :compact, :compact! => :compact!, :count => :compte, :delete => :supprimer, :delete_at => :supprimer_at, :delete_if => :supprimer_si, :drop => :baisse, :drop_while => :drop_while, :each => :chaque, :each_index => :chaque_index, :empty? => :vide?, :eql? => :eql?, :fetch => :chercher, :fill => :remplissage, :find_index => :trouver_index, :first => :premier, :flatten => :aplatir, :flatten! => :aplatir!, :frozen? => :gelé?, :hash => :hachage, :index => :index, :insert => :insert, :inspect => :inspecter, :join => :joindre, :keep_if => :garde_si, :last => :dernier, :length => :longueur, :map => :carte, :map! => :carte!, :pack => :paquet, :product => :produit, :push => :poussoir, :rassoc => :rassoc, :reject => :rejeter, :reject! => :rejeter!, :replace => :remplacer, :reverse => :inverse, :reverse! => :inverse!, :reverse_each => :inverse_chaque, :rotate => :tourner, :rotate! => :tourner!, :sample => :echantillon, :select => :choisir, :select! => :choisir!, :shift => :changement, :shuffle => :mélanger, :shuffle! => :mélanger!, :size => :taille, :slice => :tranche, :slice! => :tranche!, :take => :prendre, :take_while => :prendre_tout, :transpose => :transposer, :uniq => :uniques, :uniq! => :uniques!}
   Array.instance_methods(false).each do |f|
     if translations.key?(f)
       alias_method translations[f], f
@@ -30,8 +30,8 @@ end
 module Kernel
   alias sane_puts puts
   def puts(s)
-      sane_puts "If you don't mind, " + s
-    end
+    sane_puts "If you don't mind, " + s
+  end
   alias_method :giver, :puts
 end
 
