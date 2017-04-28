@@ -37,7 +37,7 @@ take off
 ```
 
 ### Open issues
-There is not a single reference to hockey, curling, or meeses, which by most Canadian standards is unnaceptable.
+There is not a single reference to hockey, curling, or meeses, which by most Canadian standards is unacceptable.
 
 ### <3,
 monica
